@@ -9,6 +9,20 @@ package paquete07;
  *
  * @author reroes
  */
-public class Figura {
-    
+public abstract class Figura {
+    protected String caracteristicas;
+    protected double area;
+
+    public void establecerCaracteristicas(String c) {
+        caracteristicas = c;
+    }
+
+    public abstract void calcularArea();
+
+    public String obtenerCaracteristicas() {
+        return caracteristicas;
+    }
+    public double obtenerCalcularArea() {
+        return area;
+    }
 }

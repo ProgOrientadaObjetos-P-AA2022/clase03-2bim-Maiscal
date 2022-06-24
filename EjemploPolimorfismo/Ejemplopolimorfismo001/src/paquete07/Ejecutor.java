@@ -6,6 +6,7 @@
 package paquete07;
 
 import java.util.ArrayList;
+import java.util.Scanner;
 
 /**
  *
@@ -30,6 +31,22 @@ public class Ejecutor {
         */
         
         // inicio de la solución
+
+        Cuadrado c1 = new Cuadrado(45);
+        Cuadrado c2 = new Cuadrado(50);
+        Cuadrado c3 = new Cuadrado(25);
+        Cuadrado c4 = new Cuadrado(35);
+        
+        Rombo r1 = new Rombo(3.5, 5.5);
+        Rombo r2 = new Rombo(22.6, 30);
+        Rombo r3 = new Rombo(10.5, 15);
+        
+        Triangulo t1 = new Triangulo(50, 10);
+        Triangulo t2 = new Triangulo(20, 15.6);
+        Triangulo t3 = new Triangulo(25, 60.1);
+        Triangulo t4 = new Triangulo(5.9, 9.5);
+        Triangulo t5 = new Triangulo(6.66,9.45);
+        
         ArrayList<Figura> figuras = new ArrayList<>();
         
         
@@ -37,7 +54,7 @@ public class Ejecutor {
         // proceso para comprobar el polimorfismo
         for (int i = 0; i < figuras.size(); i++) {
             // 1.  
-            figuras.get(i).calcular_area();
+            figuras.get(i).calcularArea();
             
             System.out.printf("Datos de Figura\n"
                         + "%s\n",                        
